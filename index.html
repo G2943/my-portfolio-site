@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaibhav - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
         padding: 0;
       }
       body {
-        background-color:rgb(2, 2, 36);
+        background-color: rgb(2, 2, 36);
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
 
-      nav{
+      nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -26,15 +29,81 @@
         background-color: blue;
       }
 
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
-        
       }
 
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0px 23px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+        align-items: center;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .purple {
+        color: rgb(148, 49, 148);
+      }
+
+      .rightSection img {
+        width: 80%;
+        margin: 40px 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(135, 135, 216);
+      }
+
+      main hr {
+        border: 0;
+        background: #a269d7;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      #element {
+        color: rgb(148, 49, 148);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      .secondSection h1 {
+        font-size: 1.3rem;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      .secondSection .box {
+        background-color: white;
+        height: 2px;
+        width: 80vw;
+        margin: 56px 0;
       }
     </style>
   </head>
@@ -43,14 +112,49 @@
       <nav>
         <div class="left">Vaibhav's Portfolio</div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact Me</li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi my name is <span class="purple">Vaibhav</span>
+          <div>
+            and I am a passionate
+            <div>Web Developer</div>
+            <span id="element"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
+      </section>
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "&amp; Scrum Master."],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
