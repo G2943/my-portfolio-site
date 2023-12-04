@@ -1,0 +1,241 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(2, 2, 36);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: blue;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 23px;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 130px 0;
+  align-items: center;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection .buttons {
+  padding: 12px 0;
+}
+
+.leftSection {
+  font-size: x-large;
+}
+
+.leftSection .btn {
+  padding: 12px;
+  background: #653365;
+  color: white;
+  font-size: 13px;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.leftSection btn {
+  font-size: 2rem;
+}
+
+.purple {
+  color: rgb(148, 49, 148);
+}
+
+.rightSection img {
+  width: 80%;
+  margin: 40px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(135, 135, 216);
+}
+
+main hr {
+  border: 0;
+  background: #a269d7;
+  height: 1.2px;
+  margin: 40px 84px;
+}
+
+#element {
+  color: rgb(148, 49, 148);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 140vh;
+}
+
+.secondSection h1 {
+  font-size: 1.3rem;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.secondSection .box {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  height: 2px;
+  width: 77vw;
+  margin: 56px 0;
+}
+
+.secondSection .vertical {
+  width: 1px;
+  height: 90px;
+  background-color: white;
+  margin: 20px 120px;
+}
+
+.image-top {
+  width: 65px;
+  position: relative;
+  left: 10px;
+  top: 100px;
+}
+
+.vertical-title {
+  top: 75px;
+  left: 85px;
+  position: relative;
+  width: 400px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  font-size: 9px;
+  position: relative;
+  width: 250px;
+  color: gray;
+  top: 80px;
+  left: 85px;
+}
+
+footer {
+  background-color: #161833;
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 223px;
+}
+
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    /* background-color: red; */
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSection {
+    width: 70%;
+  }
+
+  .image-top {
+    top: 104px;
+  }
+
+  .vertical-desc {
+    width: 150px;
+  }
+
+  .vertical-title {
+    width: 150px;
+  }
+
+  .leftSection .btn {
+    margin: 4px;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+    margin: 12px 0;
+  }
+
+  .firstSection > div {
+    width: 60%;
+  }
+
+  .secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180vh;
+  }
+
+  .footer > div {
+    padding-right: 20px;
+  }
+
+  footer{
+    width: 150vw;
+  }
+
+  #gitLink{
+    font-size: xx-large;
+  }
+
+  /* .leftSection {
+    width: 100%; !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } */
+}
