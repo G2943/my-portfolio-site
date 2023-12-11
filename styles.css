@@ -257,6 +257,10 @@ footer .footer-rights {
     padding: 30px;
   }
 
+  .right{
+    font-size: smaller;
+  }
+
   /* .leftSection {
     width: 100%; !important;
     display: flex;
